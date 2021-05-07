@@ -4,7 +4,9 @@ author: "John Karuitha"
 date: "5/7/2021"
 output:
   word_document: default
-  html_document: default
+  html_document:
+    toc: true
+    code_folding: hide
   pdf_document: default
 ---
 
@@ -83,7 +85,26 @@ Here is an example of a nested block quote:
 > > This text is nested
 
 
-Here is an example of code in a block quote:
+Here is an example of code in a block quote (five spaces):
 
 >     2+2
 >     mean(c(1,2,3,4,5))
+
+
+## Figures Tables and Equations
+
+```{r}
+data1 <- pressure
+plot(data1)
+```
+
+
+## Tables 
+
+```{r}
+knitr::kable(head(cars), caption = "Top six rows of Cars dataset")
+```
+
+## Equations 
+
+$y = \beta_0 + \beta_1X$
