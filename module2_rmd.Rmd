@@ -3,10 +3,10 @@ title: "Module 2- R Markdown Document"
 author: "John Karuitha"
 date: "5/7/2021"
 output:
-  word_document: default
   html_document:
     toc: true
     code_folding: hide
+  word_document: default
   pdf_document: default
 ---
 
@@ -108,3 +108,41 @@ knitr::kable(head(cars), caption = "Top six rows of Cars dataset")
 ## Equations 
 
 $y = \beta_0 + \beta_1X$
+
+
+## Insert Images
+
+Here is an image inserted
+
+![sunstar](sunstar.png)
+
+
+Here is the R logo
+
+![r logo](https://www.r-project.org/logo/Rlogo.svg)
+
+
+## Insert an Animated GIF and Video
+
+![sunstar](sunstar.gif)
+
+
+A nice gif
+
+![my nice looking gif](my_gif.gif)
+
+
+
+
+
+![sunstar](sunstar.mp4)
+
+
+## Insert text with some footnotes
+
+Here is a footnote reference [^1] and another [^longnote]
+
+Here is an inline footnote ^[Inlines notes are easier to write, since you don't have to pick an identifier and move down to type the note.]
+
+[^1]: Here is the footnote.
+[^longnote]: Here's one with multiple blocks.
